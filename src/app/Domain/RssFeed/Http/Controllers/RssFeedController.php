@@ -4,7 +4,7 @@ namespace App\Domain\RssFeed\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Domain\RssFeed\Entities\RssFeed;
+use App\Domain\RssFeed\Entities\RssFeed;;
 
 class RssFeedController extends Controller
 {
@@ -37,7 +37,7 @@ class RssFeedController extends Controller
      */
     public function show(RssFeed $rssFeed)
     {
-        //
+        return response()->json($rssFeed->toArray());
     }
 
     /**

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title><![CDATA[ Aftonbladet: Sveriges nyhetskälla och mötesplats ]]></title>
+<link>http://www.aftonbladet.se/</link>
+<description><![CDATA[Senaste nyheterna från aftonbladet.se]]></description>
+<language>sv-se</language>
+<copyright>© 2019 Aftonbladet</copyright>
+<managingEditor>webmaster@aftonbladet.se</managingEditor>
+<webMaster>webmaster@aftonbladet.se</webMaster>
+<lastBuildDate>Thu, 11 Apr 2019 12:24:56 +0200</lastBuildDate>
+<pubDate>Thu, 11 Apr 2019 12:24:56 +0200</pubDate>
+<category>Newspapers</category>
+<docs>http://www.rssboard.org/rss-specification</docs>
+<ttl>0</ttl>
+<image>
+<url>/template/ver1-0/gfx/logos/v1/aftonbladet193x21.gif</url>
+<title><![CDATA[Aftonbladet: Sveriges nyhetskälla och mötesplats]]></title>
+<link>http://www.aftonbladet.se/</link>
+<width>193</width>
+<height>21</height>
+<description><![CDATA[Senaste nyheterna från aftonbladet.se]]></description>
+</image>
+<item>
+<link>http://www.aftonbladet.se/debatt/a/e8eq8g/nu-maste-vi-ta-striden-mot-adaktussonganget</link>
+<guid isPermaLink="true">http://www.aftonbladet.se/debatt/a/e8eq8g/nu-maste-vi-ta-striden-mot-adaktussonganget</guid>
+<category>debatt</category>
+<title><![CDATA[Nu måste vi ta striden mot Adaktussongänget]]></title>
+<pubDate>Thu, 25 Jul 2019 04:00:00 +0200</pubDate>
+<description><![CDATA[<img src="https://gfx.aftonbladet-cdn.se/image/32483398/250/widescreen/966b946743bcc/Det+%C3%A4r+dags+att+kavla+upp+%C3%A4rmarna+igen+och+st%C3%A5+upp+mot+det+nya+Adakutssong%C3%A4nget,+skriver+V%C3%A4nsterpartiets+EU-parlamentariker+Malin+Bj%C3%B6rk.+Personerna+som+sitter+runt+Lars+Adaktusson+har+inte+med+texten+att+g%C3%B6ra. " />]]></description>
+</item>
+<item>
+<link>http://www.aftonbladet.se/debatt/a/e8eq8g/nu-maste-vi-ta-striden-mot-adaktussonganget</link>
+<guid isPermaLink="true">http://www.aftonbladet.se/debatt/a/e8eq8g/nu-maste-vi-ta-striden-mot-adaktussonganget</guid>
+<category>debatt</category>
+<title><![CDATA[Nu måste vi ta striden mot Adaktussongänget]]></title>
+<pubDate>Thu, 25 Jul 2019 04:00:00 +0200</pubDate>
+<description><![CDATA[<img src="https://gfx.aftonbladet-cdn.se/image/32483398/250/widescreen/966b946743bcc/Det+%C3%A4r+dags+att+kavla+upp+%C3%A4rmarna+igen+och+st%C3%A5+upp+mot+det+nya+Adakutssong%C3%A4nget,+skriver+V%C3%A4nsterpartiets+EU-parlamentariker+Malin+Bj%C3%B6rk.+Personerna+som+sitter+runt+Lars+Adaktusson+har+inte+med+texten+att+g%C3%B6ra. " />]]></description>
+</item>
+<item>
+<link>http://www.aftonbladet.se/debatt/a/e8eq8g/nu-maste-vi-ta-striden-mot-adaktussonganget</link>
+<guid isPermaLink="true">http://www.aftonbladet.se/debatt/a/e8eq8g/nu-maste-vi-ta-striden-mot-adaktussonganget</guid>
+<category>debatt</category>
+<title><![CDATA[Nu måste vi ta striden mot Adaktussongänget]]></title>
+<pubDate>Thu, 25 Jul 2019 04:00:00 +0200</pubDate>
+<description><![CDATA[<img src="https://gfx.aftonbladet-cdn.se/image/32483398/250/widescreen/966b946743bcc/Det+%C3%A4r+dags+att+kavla+upp+%C3%A4rmarna+igen+och+st%C3%A5+upp+mot+det+nya+Adakutssong%C3%A4nget,+skriver+V%C3%A4nsterpartiets+EU-parlamentariker+Malin+Bj%C3%B6rk.+Personerna+som+sitter+runt+Lars+Adaktusson+har+inte+med+texten+att+g%C3%B6ra. " />]]></description>
+</item>
+<item>
+<link>http://www.aftonbladet.se/debatt/a/e8eq8g/nu-maste-vi-ta-striden-mot-adaktussonganget</link>
+<guid isPermaLink="true">http://www.aftonbladet.se/debatt/a/e8eq8g/nu-maste-vi-ta-striden-mot-adaktussonganget</guid>
+<category>debatt</category>
+<title><![CDATA[Nu måste vi ta striden mot Adaktussongänget]]></title>
+<pubDate>Thu, 25 Jul 2019 04:00:00 +0200</pubDate>
+<description><![CDATA[<img src="https://gfx.aftonbladet-cdn.se/image/32483398/250/widescreen/966b946743bcc/Det+%C3%A4r+dags+att+kavla+upp+%C3%A4rmarna+igen+och+st%C3%A5+upp+mot+det+nya+Adakutssong%C3%A4nget,+skriver+V%C3%A4nsterpartiets+EU-parlamentariker+Malin+Bj%C3%B6rk.+Personerna+som+sitter+runt+Lars+Adaktusson+har+inte+med+texten+att+g%C3%B6ra. " />]]></description>
+</item>
+</channel>
+</rss>

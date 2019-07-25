@@ -1,0 +1,24 @@
+[{
+"link": "http://www.aftonbladet.se/debatt/a/e8eq8g/nu-maste-vi-ta-striden-mot-adaktussonganget",
+"title": "Nu måste vi ta striden mot Adaktussongänget",
+"pubDate": "Thu, 25 Jul 2019 04:00:00 +0200",
+"description": "<img src=\"https://gfx.aftonbladet-cdn.se/image/32483398/250/widescreen/966b946743bcc/Det+%C3%A4r+dags+att+kavla+upp+%C3%A4rmarna+igen+och+st%C3%A5+upp+mot+det+nya+Adakutssong%C3%A4nget,+skriver+V%C3%A4nsterpartiets+EU-parlamentariker+Malin+Bj%C3%B6rk.+Personerna+som+sitter+runt+Lars+Adaktusson+har+inte+med+texten+att+g%C3%B6ra. \" />"
+},
+{
+"link": "http://www.aftonbladet.se/debatt/a/e8eq8g/nu-maste-vi-ta-striden-mot-adaktussonganget",
+"title": "Nu måste vi ta striden mot Adaktussongänget",
+"pubDate": "Thu, 25 Jul 2019 04:00:00 +0200",
+"description": "<img src=\"https://gfx.aftonbladet-cdn.se/image/32483398/250/widescreen/966b946743bcc/Det+%C3%A4r+dags+att+kavla+upp+%C3%A4rmarna+igen+och+st%C3%A5+upp+mot+det+nya+Adakutssong%C3%A4nget,+skriver+V%C3%A4nsterpartiets+EU-parlamentariker+Malin+Bj%C3%B6rk.+Personerna+som+sitter+runt+Lars+Adaktusson+har+inte+med+texten+att+g%C3%B6ra. \" />"
+},
+{
+"link": "http://www.aftonbladet.se/debatt/a/e8eq8g/nu-maste-vi-ta-striden-mot-adaktussonganget",
+"title": "Nu måste vi ta striden mot Adaktussongänget",
+"pubDate": "Thu, 25 Jul 2019 04:00:00 +0200",
+"description": "<img src=\"https://gfx.aftonbladet-cdn.se/image/32483398/250/widescreen/966b946743bcc/Det+%C3%A4r+dags+att+kavla+upp+%C3%A4rmarna+igen+och+st%C3%A5+upp+mot+det+nya+Adakutssong%C3%A4nget,+skriver+V%C3%A4nsterpartiets+EU-parlamentariker+Malin+Bj%C3%B6rk.+Personerna+som+sitter+runt+Lars+Adaktusson+har+inte+med+texten+att+g%C3%B6ra. \" />"
+},
+{
+"link": "http://www.aftonbladet.se/debatt/a/e8eq8g/nu-maste-vi-ta-striden-mot-adaktussonganget",
+"title": "Nu måste vi ta striden mot Adaktussongänget",
+"pubDate": "Thu, 25 Jul 2019 04:00:00 +0200",
+"description": "<img src=\"https://gfx.aftonbladet-cdn.se/image/32483398/250/widescreen/966b946743bcc/Det+%C3%A4r+dags+att+kavla+upp+%C3%A4rmarna+igen+och+st%C3%A5+upp+mot+det+nya+Adakutssong%C3%A4nget,+skriver+V%C3%A4nsterpartiets+EU-parlamentariker+Malin+Bj%C3%B6rk.+Personerna+som+sitter+runt+Lars+Adaktusson+har+inte+med+texten+att+g%C3%B6ra. \" />"
+}]
