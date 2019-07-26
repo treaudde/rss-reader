@@ -77,6 +77,6 @@ class RssFeedController extends Controller
      */
     public function destroy(RssFeed $rssFeed)
     {
-        //
+        return response()->json($rssFeed->delete());
     }
 }
