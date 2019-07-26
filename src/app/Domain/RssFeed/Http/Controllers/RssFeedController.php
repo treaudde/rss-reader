@@ -4,7 +4,8 @@ namespace App\Domain\RssFeed\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Domain\RssFeed\Entities\RssFeed;;
+use App\Domain\RssFeed\Entities\RssFeed;
+use App\Domain\RssFeed\Services\RssFeedService;
 
 class RssFeedController extends Controller
 {
@@ -33,11 +34,23 @@ class RssFeedController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Domain\RssFeed\Entities\RssFeed  $rssFeed
+     * @param  RssFeedService $rssFeedService
      * @return \Illuminate\Http\Response
      */
-    public function show(RssFeed $rssFeed)
+    public function show(RssFeed $rssFeed, RssFeedService $rssFeedService)
     {
-        return response()->json($rssFeed->toArray());
+        //get the data
+        //@TODO store in the database
+        $rssFeedData = json_decode(
+            $rssFeedService->getRssFeedData($rssFeed->url)
+        );
+
+        $response = array_merge(
+            $rssFeed->toArray(),
+            ['articles' => $rssFeedData]
+        );
+
+        return response()->json($response);
     }
 
     /**

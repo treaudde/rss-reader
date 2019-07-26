@@ -4,6 +4,10 @@ namespace App\Domain\RssFeed\Services;
 
 use GuzzleHttp\Client;
 
+/**
+ * Class RssFeedService
+ * @package App\Domain\RssFeed\Services
+ */
 class RssFeedService
 {
     /**

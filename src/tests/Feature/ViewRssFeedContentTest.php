@@ -17,20 +17,41 @@ class ViewRssFeedContentTest extends TestCase
 {
     use RefreshDatabase;
 
+    public function setUp(): void
+    {
+        parent::setUp();
+        $this->rssFeedContent = file_get_contents(__DIR__.'/../Unit/files/rssResponse.txt');
+    }
+
     public function testLoadRssFeed()
     {
+
+        $mock = new MockHandler([
+            new Response(
+                200,
+                ['Content-type' => 'application/rss+xml;charset=utf-8'],
+                $this->rssFeedContent
+            )
+        ]);
+
+        $handler = HandlerStack::create($mock);
+        $client = new Client(['handler' => $handler]);
+        $this->app->instance(Client::class, $client);
+
         $rss = RssFeed::create([
             'name' => 'Test Rss Feed',
             'url' => 'http://test.rss'
         ]);
 
+        //@TODO find better way to test this json
         $this->get("api/rss-feeds/{$rss->id}", ['Accept' => 'application/json'])
             ->assertStatus(200)
             ->assertJsonFragment([
                 'id' => 1,
                 'name' => 'Test Rss Feed',
-                'url' => 'http://test.rss'
-
+                'url' => 'http://test.rss',
+            ])->assertJsonStructure([
+               'articles'
             ]);
     }
 
