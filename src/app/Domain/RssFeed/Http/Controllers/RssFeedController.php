@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Domain\RssFeed\Entities\RssFeed;
 use App\Domain\RssFeed\Services\RssFeedService;
+use App\Domain\RssFeed\Http\Requests\EditRssFeedRequest;
 use App\Domain\RssFeed\Http\Requests\CreateRssFeedRequest;
 
 class RssFeedController extends Controller
@@ -58,13 +59,14 @@ class RssFeedController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  EditRssFeedRequest $request
      * @param  \App\Domain\RssFeed\Entities\RssFeed  $rssFeed
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, RssFeed $rssFeed)
+    public function update(EditRssFeedRequest $request, RssFeed $rssFeed)
     {
-        //
+        $feedData = $request->only('url', 'name');
+        return response()->json($rssFeed->update($feedData));
     }
 
     /**
