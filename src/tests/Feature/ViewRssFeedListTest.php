@@ -29,7 +29,7 @@ class ViewRssFeedListTest extends TestCase
             );
         }
 
-        $response = $this->get('api/rss-feeds');
+        $response = $this->get('api/rss-feeds', ['Accept' => 'application/json']);
         $response->assertStatus(200)
             ->assertJsonStructure([
                 ['id', 'name', 'url']

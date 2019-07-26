@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Domain\RssFeed\Entities\RssFeed;
 use App\Domain\RssFeed\Services\RssFeedService;
+use App\Domain\RssFeed\Http\Requests\CreateRssFeedRequest;
 
 class RssFeedController extends Controller
 {
@@ -22,12 +23,13 @@ class RssFeedController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  CreateRssFeedRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateRssFeedRequest $request)
     {
-        //
+        $feedData = $request->only('url', 'name');
+        return response()->json(RssFeed::create($feedData));
     }
 
     /**
