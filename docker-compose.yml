@@ -4,7 +4,7 @@ services:
     container_name: rss-api-backend
     image: treaudde/simple-development-environment:latest
     ports:
-      - "8080:80"
+      - "8084:80"
     volumes:
       - ./src:/var/www/html
       - ./config/000-default.conf:/etc/apache2/sites-enabled/000-default.conf
