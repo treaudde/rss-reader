@@ -1,5 +1,5 @@
 <?php
-
+use App\Domain\Vue\Routes\AppRoutes;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('mockups');
-});
+//Route::get('/mockups', function () {
+//    return view('mockups');
+//});
+//
+//Route::get('/', function () {
+//    return view('app');
+//});
+
+AppRoutes::routes();;

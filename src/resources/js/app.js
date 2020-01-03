@@ -4,9 +4,19 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+//require('./bootstrap');
+
 
 window.Vue = require('vue');
+window.axios = require('axios');
+
+window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+window.axios.defaults.headers.common['Accept'] = 'application/json';
+
+const rssApiUrl  = 'http://localhost:8084/api/rss-feeds';
+const rssApi = require('./vue/services/rss-api').default;
+const rssApiService = new rssApi(rssApiUrl, window.axios);
+
 
 /**
  * The following block of code may be used to automatically register your
@@ -19,7 +29,7 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('example-component', require('./vue/components/ExampleComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
