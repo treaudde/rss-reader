@@ -25,7 +25,6 @@ class ViewRssFeedContentTest extends TestCase
 
     public function testLoadRssFeed()
     {
-
         $mock = new MockHandler([
             new Response(
                 200,
@@ -47,7 +46,6 @@ class ViewRssFeedContentTest extends TestCase
         $this->get("api/rss-feeds/{$rss->id}", ['Accept' => 'application/json'])
             ->assertStatus(200)
             ->assertJsonFragment([
-                'id' => 1,
                 'name' => 'Test Rss Feed',
                 'url' => 'http://test.rss',
             ])->assertJsonStructure([
