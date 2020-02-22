@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Domain\RssFeed\Http\Requests;
+namespace App\Domain\RssFeed\Application\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

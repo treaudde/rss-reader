@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Domain\Vue\Routes;
+namespace App\Domain\Vue\Infrastructure\Routes;
 
 use Illuminate\Support\Facades\Route;
 
 class AppRoutes
 {
-    const CONTROLLER_PATH = '\App\Domain\Vue\Http\Controllers\AppController';
+    const CONTROLLER_PATH = '\App\Domain\Vue\Application\Http\Controllers\AppController';
 
     public static function routes()
     {

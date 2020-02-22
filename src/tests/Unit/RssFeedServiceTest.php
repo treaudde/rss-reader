@@ -9,7 +9,7 @@ use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\Exception\RequestException;
-use App\Domain\RssFeed\Services\RssFeedService;
+use App\Domain\RssFeed\BusinessLogic\Services\RssFeedService;
 
 class RssFeedServiceTest extends TestCase
 {

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
-use App\Domain\RssFeed\Routes\RssFeedRoutes;
+use App\Domain\RssFeed\Infrastructure\Routes\RssFeedRoutes;
 
 /*
 |--------------------------------------------------------------------------

@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Domain\RssFeed\Http\Controllers;
+namespace App\Domain\RssFeed\Application\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Domain\RssFeed\Entities\RssFeed;
-use App\Domain\RssFeed\Services\RssFeedService;
-use App\Domain\RssFeed\Http\Requests\EditRssFeedRequest;
-use App\Domain\RssFeed\Http\Requests\CreateRssFeedRequest;
+use App\Domain\RssFeed\BusinessLogic\Entities\RssFeed;
+use App\Domain\RssFeed\BusinessLogic\Services\RssFeedService;
+use App\Domain\RssFeed\Application\Http\Requests\EditRssFeedRequest;
+use App\Domain\RssFeed\Application\Http\Requests\CreateRssFeedRequest;
 
 class RssFeedController extends Controller
 {

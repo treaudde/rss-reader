@@ -3,7 +3,7 @@
 namespace Tests\Feature;
 
 use Tests\TestCase;
-use App\Domain\RssFeed\Entities\RssFeed;
+use App\Domain\RssFeed\BusinessLogic\Entities\RssFeed;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 

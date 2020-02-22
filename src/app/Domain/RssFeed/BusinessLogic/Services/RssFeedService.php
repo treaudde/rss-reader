@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Domain\RssFeed\Services;
+namespace App\Domain\RssFeed\BusinessLogic\Services;
 
 use GuzzleHttp\Client;
 

@@ -8,7 +8,7 @@ use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Handler\MockHandler;
-use App\Domain\RssFeed\Entities\RssFeed;
+use App\Domain\RssFeed\BusinessLogic\Entities\RssFeed;
 use GuzzleHttp\Exception\RequestException;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;

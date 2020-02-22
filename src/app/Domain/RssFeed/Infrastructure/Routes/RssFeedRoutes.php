@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Domain\RssFeed\Routes;
+namespace App\Domain\RssFeed\Infrastructure\Routes;
 
 use Illuminate\Support\Facades\Route;
 
 class RssFeedRoutes
 {
-    const CONTROLLER_PATH = '\App\Domain\RssFeed\Http\Controllers\RssFeedController';
+    const CONTROLLER_PATH = '\App\Domain\RssFeed\Application\Http\Controllers\RssFeedController';
 
     public static function routes()
     {
