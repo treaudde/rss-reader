@@ -5,10 +5,10 @@ namespace App\Domain\RssFeed\BusinessLogic\Services;
 use GuzzleHttp\Client;
 
 /**
- * Class RssFeedService
+ * Class RetrieveRssFeedService
  * @package App\Domain\RssFeed\Services
  */
-class RssFeedService
+class RetrieveRssFeedService
 {
     /**
      * @var Client
@@ -16,7 +16,7 @@ class RssFeedService
     private $client;
 
     /**
-     * RssFeedService constructor.
+     * RetrieveRssFeedService constructor.
      * @param Client $client
      */
     public function __construct(Client $client)

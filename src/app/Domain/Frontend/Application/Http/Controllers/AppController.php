@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Domain\Vue\Application\Http\Controllers;
+namespace App\Domain\Frontend\Application\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 

@@ -1,5 +1,5 @@
 <?php
-use App\Domain\Vue\Infrastructure\Routes\AppRoutes;
+use App\Domain\Frontend\Infrastructure\Routes\AppRoutes;
 /*
 |--------------------------------------------------------------------------
 | Web Routes

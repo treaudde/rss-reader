@@ -9,7 +9,7 @@ use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\Exception\RequestException;
-use App\Domain\RssFeed\BusinessLogic\Services\RssFeedService;
+use App\Domain\RssFeed\BusinessLogic\Services\RetrieveRssFeedService;
 
 class RssFeedServiceTest extends TestCase
 {
@@ -26,7 +26,7 @@ class RssFeedServiceTest extends TestCase
     public function testGetRssFeedData()
     {
         $this->setUpHttpMockSuccess();
-        $this->rssFeedService = resolve(RssFeedService::class);
+        $this->rssFeedService = resolve(RetrieveRssFeedService::class);
 
         $rssResult = $this->rssFeedService->getRssFeedData('http://test.rss');
         $this->assertJson(file_get_contents(
@@ -39,7 +39,7 @@ class RssFeedServiceTest extends TestCase
     {
         $this->expectException(RequestException::class);
         $this->setUpHttpMockFailure();
-        $this->rssFeedService = resolve(RssFeedService::class);
+        $this->rssFeedService = resolve(RetrieveRssFeedService::class);
 
         $rssResult = $this->rssFeedService->getRssFeedData('http://test.rss');
         $this->assertEquals('', $rssResult);

@@ -5,7 +5,7 @@ namespace App\Domain\RssFeed\Application\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Domain\RssFeed\BusinessLogic\Entities\RssFeed;
-use App\Domain\RssFeed\BusinessLogic\Services\RssFeedService;
+use App\Domain\RssFeed\BusinessLogic\Services\RetrieveRssFeedService;
 use App\Domain\RssFeed\Application\Http\Requests\EditRssFeedRequest;
 use App\Domain\RssFeed\Application\Http\Requests\CreateRssFeedRequest;
 
@@ -37,10 +37,10 @@ class RssFeedController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Domain\RssFeed\Entities\RssFeed  $rssFeed
-     * @param  RssFeedService $rssFeedService
+     * @param  RetrieveRssFeedService $rssFeedService
      * @return \Illuminate\Http\Response
      */
-    public function show(RssFeed $rssFeed, RssFeedService $rssFeedService)
+    public function show(RssFeed $rssFeed, RetrieveRssFeedService $rssFeedService)
     {
         //get the data
         //@TODO store in the database
