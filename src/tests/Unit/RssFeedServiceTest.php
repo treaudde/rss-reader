@@ -42,7 +42,7 @@ class RssFeedServiceTest extends TestCase
         $this->rssFeedService = resolve(RetrieveRssFeedService::class);
 
         $rssResult = $this->rssFeedService->getRssFeedData('http://test.rss');
-        $this->assertEquals('', $rssResult);
+        $this->assertEquals('[]', $rssResult);
     }
 
     private function setUpHttpMockSuccess()

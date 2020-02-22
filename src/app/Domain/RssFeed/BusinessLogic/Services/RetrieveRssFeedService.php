@@ -39,7 +39,7 @@ class RetrieveRssFeedService
             return $this->processRssData($rssRawData);
         }
 
-        return "";
+        return "[]";
     }
 
     /**

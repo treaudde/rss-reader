@@ -10,4 +10,9 @@ class RssFeed extends Model
         'name',
         'url'
     ];
+
+    public function rssFeedContent()
+    {
+        return $this->hasMany(RssFeedContent::class);
+    }
 }

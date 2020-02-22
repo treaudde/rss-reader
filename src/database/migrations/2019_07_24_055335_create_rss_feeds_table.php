@@ -14,7 +14,7 @@ class CreateRssFeedsTable extends Migration
     public function up()
     {
         Schema::create('rss_feeds', function (Blueprint $table) {
-            $table->integerIncrements('id');
+            $table->bigIncrements('id');
             $table->string('name', 512);
             $table->text('url');
             $table->timestamps();
