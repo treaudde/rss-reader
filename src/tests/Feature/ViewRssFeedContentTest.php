@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Domain\RssFeed\BusinessLogic\Services\RetrieveRssFeedService;
 use Tests\TestCase;
 use GuzzleHttp\Client;
 use GuzzleHttp\HandlerStack;
@@ -12,6 +13,7 @@ use App\Domain\RssFeed\BusinessLogic\Entities\RssFeed;
 use GuzzleHttp\Exception\RequestException;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Mockery;
 
 class ViewRssFeedContentTest extends TestCase
 {
@@ -21,10 +23,7 @@ class ViewRssFeedContentTest extends TestCase
     {
         parent::setUp();
         $this->rssFeedContent = file_get_contents(__DIR__.'/../Unit/files/rssResponse.txt');
-    }
 
-    public function testLoadRssFeed()
-    {
         $mock = new MockHandler([
             new Response(
                 200,
@@ -36,7 +35,10 @@ class ViewRssFeedContentTest extends TestCase
         $handler = HandlerStack::create($mock);
         $client = new Client(['handler' => $handler]);
         $this->app->instance(Client::class, $client);
+    }
 
+    public function testLoadRssFeed()
+    {
         $rss = RssFeed::create([
             'name' => 'Test Rss Feed',
             'url' => 'http://test.rss'
@@ -52,6 +54,8 @@ class ViewRssFeedContentTest extends TestCase
                'articles'
             ]);
     }
+
+    //@TODO test refresh method
 
     public function testLoadRssFeedNotFound()
     {

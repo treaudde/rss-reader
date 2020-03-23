@@ -42,9 +42,9 @@ class RssFeedController extends Controller
      * @param  RetrieveRssFeedService $rssFeedService
      * @return \Illuminate\Http\Response
      */
-    public function show(RssFeed $rssFeed)
+    public function show(RssFeed $rssFeed, Request $request)
     {
-        if($rssFeed->rssFeedContent->count() == 0) {
+        if($rssFeed->rssFeedContent->count() == 0 || $request->query('refresh') ) {
             $rssFeedData = $this->retrieveRssFeedContent($rssFeed->url);
             $this->storeRssFeedContent($rssFeed, $rssFeedData);
         }
