@@ -49,12 +49,10 @@ class RssFeedController extends Controller
             $this->storeRssFeedContent($rssFeed, $rssFeedData);
         }
 
-        $response = array_merge(
-            $rssFeed->refresh()->rssFeedContent->toArray(),
-            ['articles' => $rssFeedData]
-        );
-
-        return response()->json($response);
+        return response()->json([
+            $rssFeed,
+            'articles' => $rssFeed->refresh()->rssFeedContent
+        ]);
     }
 
     /**
@@ -81,7 +79,6 @@ class RssFeedController extends Controller
     {
         return response()->json($rssFeed->delete());
     }
-
 
 
     private function retrieveRssFeedContent($rssFeedUrl)

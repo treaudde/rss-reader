@@ -13,15 +13,14 @@ class RetrieveRssFeedService
     /**
      * @var Client
      */
-    private $client;
+    public $client;
 
     /**
      * RetrieveRssFeedService constructor.
-     * @param Client $client
      */
-    public function __construct(Client $client)
+    public function __construct()
     {
-        $this->client = $client;
+        $this->client = app()->make(Client::class);
     }
 
     /**

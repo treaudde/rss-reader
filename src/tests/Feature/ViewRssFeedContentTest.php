@@ -43,7 +43,7 @@ class ViewRssFeedContentTest extends TestCase
         ]);
 
         //@TODO find better way to test this json
-        $this->get("api/rss-feeds/{$rss->id}", ['Accept' => 'application/json'])->dump()
+        $this->get("api/rss-feeds/{$rss->id}", ['Accept' => 'application/json'])
             ->assertStatus(200)
             ->assertJsonFragment([
                 'name' => 'Test Rss Feed',
