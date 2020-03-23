@@ -6,7 +6,6 @@
 
 //require('./bootstrap');
 
-
 window.Vue = require('vue');
 window.axios = require('axios');
 
@@ -15,7 +14,7 @@ window.axios.defaults.headers.common['Accept'] = 'application/json';
 
 const rssApiUrl  = 'http://localhost:8084/api/rss-feeds';
 const rssApi = require('./vue/services/rss-api').default;
-const rssApiService = new rssApi(rssApiUrl, window.axios);
+window.rssApiService = new rssApi(rssApiUrl, window.axios);
 
 
 /**
@@ -29,7 +28,7 @@ const rssApiService = new rssApi(rssApiUrl, window.axios);
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
-Vue.component('example-component', require('./vue/components/ExampleComponent.vue').default);
+Vue.component('view-feeds', require('./vue/components/ViewFeedsComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

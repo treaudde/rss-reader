@@ -3,6 +3,7 @@
 namespace Tests\Feature;
 
 use App\Domain\RssFeed\BusinessLogic\Services\RetrieveRssFeedService;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Tests\TestCase;
 use GuzzleHttp\Client;
 use GuzzleHttp\HandlerStack;
@@ -17,7 +18,7 @@ use Mockery;
 
 class ViewRssFeedContentTest extends TestCase
 {
-    use RefreshDatabase;
+    use DatabaseTransactions;
 
     public function setUp(): void
     {

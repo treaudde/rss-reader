@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Domain\RssFeed\Entities\RssFeed;
+use App\Domain\RssFeed\BusinessLogic\Entities\RssFeed;
 
 class RssFeedSeeder extends Seeder
 {

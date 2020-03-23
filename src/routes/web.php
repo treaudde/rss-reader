@@ -11,12 +11,12 @@ use App\Domain\Frontend\Infrastructure\Routes\AppRoutes;
 |
 */
 
-//Route::get('/mockups', function () {
-//    return view('mockups');
-//});
-//
-//Route::get('/', function () {
-//    return view('app');
-//});
+Route::get('/mockups', function () {
+    return view('mockups');
+});
+
+Route::get('/', function () {
+    return view('app');
+});
 
 AppRoutes::routes();;

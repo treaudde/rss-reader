@@ -37,6 +37,10 @@
 </head>
 <body>
 
+<div id="app">
+<view-feeds></view-feeds>
+    <hr />
+</div>
 
 <script src="<?php echo asset('js/app.js'); ?>"></script>
 </body>
