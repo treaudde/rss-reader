@@ -3,6 +3,7 @@
         <div class="row">
             <div class="col-12">
                 <h1>View All Feeds</h1>
+                <loading v-if="loading"></loading>
                 <div class="row">
                     <div class="col-12">
                         <ul>
@@ -12,8 +13,9 @@
                                     <strong>16 Articles</strong>
                                 </p>-->
                                 <p>
-                                    <a :href="`/rss-feeds/${rssFeed.id}/edit`">Edit</a> |
-                                    <a :href="`/rss-feeds/${rssFeed.id}/delete`">Delete</a>
+                                    <!--<router-link :to="`/rss-feeds/${rssFeed.id}/edit`">Edit</router-link> |-->
+                                    <!--<a href="#" @click.stop.prevent="deleteRssFeed(rssFeed.id)">Delete</a> |-->
+                                    <router-link :to="`/rss-feeds/${rssFeed.id}/view`">View Articles</router-link>
                                 </p>
                             </li>
                         </ul>
@@ -32,7 +34,9 @@
     export default {
         data() {
             return {
-               rssFeeds:[]
+                rssFeeds:[],
+                noFeeds: false,
+                loading: false
             }
         },
         mounted() {
@@ -41,13 +45,20 @@
 
         methods: {
             getRssFeeds() {
+                this.loading = true;
                 rssApiService
                     .getFeeds()
                     .then((response) => {
                         this.rssFeeds = response.data;
+                        this.loading = false;
                     }, (error) => {
-                        console.log(error)
+                        alert('Error loading feeds!')
+
                     })
+            },
+
+            deleteRssFeed(feedId) {
+                alert('deleting feed')
             }
         }
 

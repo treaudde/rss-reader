@@ -36,10 +36,8 @@
     </style>
 </head>
 <body>
-
 <div id="app">
-<view-feeds></view-feeds>
-    <hr />
+    <router-view></router-view>
 </div>
 
 <script src="<?php echo asset('js/app.js'); ?>"></script>

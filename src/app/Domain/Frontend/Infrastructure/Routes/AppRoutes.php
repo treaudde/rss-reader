@@ -12,6 +12,8 @@ class AppRoutes
     {
         Route::get('/', self::CONTROLLER_PATH.'@index');
         Route::get('/mockups', self::CONTROLLER_PATH.'@viewMockups');
+        Route::any('{catchall}', self::CONTROLLER_PATH.'@index')->where('catchall', '.*');
+
     }
 
 }

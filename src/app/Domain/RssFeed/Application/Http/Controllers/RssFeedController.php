@@ -44,13 +44,13 @@ class RssFeedController extends Controller
      */
     public function show(RssFeed $rssFeed, Request $request)
     {
-        if($rssFeed->rssFeedContent->count() == 0 || $request->query('refresh') ) {
+        if($rssFeed->rssFeedContent->count() == 0 || $request->query('refresh') == '1' ) {
             $rssFeedData = $this->retrieveRssFeedContent($rssFeed->url);
             $this->storeRssFeedContent($rssFeed, $rssFeedData);
         }
 
         return response()->json([
-            $rssFeed,
+            "feed" => $rssFeed,
             'articles' => $rssFeed->refresh()->rssFeedContent
         ]);
     }
@@ -90,6 +90,8 @@ class RssFeedController extends Controller
     }
 
     private function storeRssFeedContent($rssFeed, $rssFeedData) {
+        RssFeedContent::where('rss_feed_id', $rssFeed->id)->delete();
+
         foreach ($rssFeedData as $rssFeedDatum) {
             RssFeedContent::create(
                 [

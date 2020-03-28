@@ -52,7 +52,7 @@ class ViewRssFeedContentTest extends TestCase
                 'name' => 'Test Rss Feed',
                 'url' => 'http://test.rss',
             ])->assertJsonStructure([
-               'articles'
+               'articles', 'feed'
             ]);
     }
 

@@ -9,8 +9,14 @@ export default class RssApi {
         return this.httpClient.get(`${this.rssApiUrl}`);
     }
 
-    getFeed(feedId) {
-        return this.httpClient.get(`${this.rssApiUrl}/${feedId}`);
+    getFeed(feedId, refreshFeed = false) {
+        let url = `${this.rssApiUrl}/${feedId}`;
+
+        if(refreshFeed) {
+            url += '?refresh=1';
+        }
+
+        return this.httpClient.get(url);
     }
 
     createFeed(feedData) {

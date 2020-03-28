@@ -8,12 +8,14 @@
 
 window.Vue = require('vue');
 window.axios = require('axios');
+window.VueRouter = require('vue-router');
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 window.axios.defaults.headers.common['Accept'] = 'application/json';
 
 const rssApiUrl  = 'http://localhost:8084/api/rss-feeds';
 const rssApi = require('./vue/services/rss-api').default;
+const router = require('./vue/routes/router').router;
 window.rssApiService = new rssApi(rssApiUrl, window.axios);
 
 
@@ -29,6 +31,9 @@ window.rssApiService = new rssApi(rssApiUrl, window.axios);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 Vue.component('view-feeds', require('./vue/components/ViewFeedsComponent.vue').default);
+Vue.component('view-feed', require('./vue/components/ViewFeedComponent.vue').default);
+Vue.component('not-found', require('./vue/components/NotFoundComponent').default);
+Vue.component('loading', require('./vue/components/LoadingComponent').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -36,6 +41,8 @@ Vue.component('view-feeds', require('./vue/components/ViewFeedsComponent.vue').d
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+Vue.use(VueRouter);
+
 const app = new Vue({
-    el: '#app',
-});
+   router
+}).$mount('#app');
